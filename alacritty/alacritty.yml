@@ -1,0 +1,110 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override variables
+# set by alacritty itself.
+env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: alacritty
+  LANG: "en_US.UTF-8"
+  LC_CTYPE: en_US.UTF-8
+  #window:
+  # Window dimensions (changes require restart)
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  #dimensions:
+  #  columns: 0
+  #  lines: 0
+  # Window position (changes require restart)
+  #
+  # Specified in number of pixels.
+  # If the position is not set, the window manager will handle the placement.
+  #position:
+  #  x: 0
+  #  y: 0
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  #padding:
+  #  x: 0
+  #  y: 0
+  # Spread additional padding evenly around the terminal content.
+  #dynamic_padding: false
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  # Values for `decorations` (macOS only):
+  #     - transparent: Title bar, transparent background and title bar buttons
+  #     - buttonless: Title bar, transparent background, but no title bar buttons
+  decorations: none
+  # Startup Mode (changes require restart)
+  #
+  # Values for `startup_mode`:
+  #   - Windowed
+  #   - Maximized
+  #   - Fullscreen
+  #
+  # Values for `startup_mode` (macOS only):
+  #   - SimpleFullscreen
+  #startup_mode: Windowed
+  # Window title
+  #title: Alacritty
+  # Window class (Linux/BSD only):
+  #class:
+  # Application instance name
+  #instance: Alacritty
+  # General application class
+  #general: Alacritty
+  # GTK theme variant (Linux/BSD only)
+  #
+  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
+  # Set this to `None` to use the default theme variant.
+  #gtk_theme_variant: None
+  #scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  #history: 10000
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  #multiplier: 3
+
+background_opacity: 0.5
+
+# Font configuration
+colors:
+  name: VisiBlue
+  author: ""
+  primary:
+    background: "#000000"
+    foreground: "#ff9933"
+  cursor:
+    text: "#000000"
+    cursor: "#666699"
+  normal:
+    black: "#333366"
+    red: "#6666cc"
+    green: "#0099cc"
+    yellow: "#3366cc"
+    blue: "#006699"
+    magenta: "#0066ff"
+    cyan: "#669999"
+    white: "#99cccc"
+  bright:
+    black: "#333399"
+    red: "#9999ff"
+    green: "#00ccff"
+    yellow: "#6699ff"
+    blue: "#0099cc"
+    magenta: "#0099ff"
+    cyan: "#66cccc"
+    white: "#ccffff"
